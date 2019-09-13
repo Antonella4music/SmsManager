@@ -1,0 +1,2 @@
+# SmsManager
+Android project
