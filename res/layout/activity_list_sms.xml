@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/messages_list"
+    tools:context="com.example.antonellab.sms_app.ListSMS">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:transcriptMode="alwaysScroll"
+        android:id="@+id/list_view" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:src="@android:drawable/ic_dialog_email"
+        app:backgroundTint="@color/colorAccent"
+        app:rippleColor="@android:color/holo_orange_light"
+        app:fabSize="normal"
+        app:elevation="10dp">
+    </android.support.design.widget.FloatingActionButton>
+
+</android.support.design.widget.CoordinatorLayout >

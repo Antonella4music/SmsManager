@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.antonellab.sms_app.Conversation">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/conversationLayout">
+
+        <android.support.v7.widget.Toolbar
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/conversationToolbar"
+            android:background="@color/white"
+            android:titleTextColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/conversationLayout2">
+
+            <ListView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/list_view"
+                android:layout_weight="1"
+                android:transcriptMode="alwaysScroll"
+                android:layout_above="@+id/messageList"/>
+
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/messageLayout"
+                android:weightSum="1">
+
+                <EditText
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|top"
+                    android:id="@+id/messageEdit"
+                    android:transcriptMode="alwaysScroll"
+                    android:hint="@string/SMS_send"
+                    android:inputType="text|textMultiLine|textCapSentences"
+                    android:layout_weight="1.06" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:text="@string/send"
+                    android:drawableTop="@drawable/next"
+                    android:background="@color/white"
+                    android:textColor="@color/black"
+                    android:id="@+id/sendMessage"
+                    android:onClick="sendConversationOk" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

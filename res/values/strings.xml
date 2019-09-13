@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Messages</string>
+    <string name="new_message">New Message</string>
+    <string name="enter_recipient">To:</string>
+    <string name="enter_message">Message:</string>
+    <string name="send">Send</string>
+    <string name="SMS_sent">Message sent</string>
+    <string name="SMS_send">Message</string>
+    <string name="type_new_sms">New Message</string>
+    <string name="cancel">Cancel</string>
+    <string name="error_noPhone">Please enter a phone number</string>
+    <string name="error_no_sms">Please enter a message</string>
+    <string name="list_SMS">Messages</string>
+
+</resources>
